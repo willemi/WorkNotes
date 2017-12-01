@@ -76,7 +76,9 @@
 - 解决办法：
 
    - 把分页`<div class='tcdPageCode'></div>`在js中生成,不要直接在jsp中写出,分页初始化时,先remove掉原来的div,然后再重新生成这个div ，再进行createPage。
+
 ###修改后 demo
+
 	$(".tcdPageCode").remove();
 	var pageHtml = "<div class='tcdPageCode'></div>";
 	$(".cont").append(pageHtml);
@@ -88,3 +90,5 @@
 			initData();
 		}
 	});
+
+
